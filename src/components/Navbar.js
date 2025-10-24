@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-14 py-8 rounded-xl">
+    <nav className="flex items-center justify-between px-8 md:px-14 py-8 rounded-xl">
       {/* Logo */}
       <Link href={"/"} className="flex gap-2 items-center justify-center">
         <Image
