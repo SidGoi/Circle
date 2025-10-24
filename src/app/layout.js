@@ -1,5 +1,6 @@
 import { Quicksand, Pacifico } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const quicksand = Quicksand({
   weight: ["300", "400", "500", "600", "700"],
@@ -23,8 +24,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={quicksand.className}>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={quicksand.className}>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
