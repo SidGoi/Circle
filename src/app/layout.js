@@ -24,7 +24,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        layout: {
+          showDevelopmentModeIndicator: false, // Hides the dev mode label globally
+        },
+      }}
+    >
       <html lang="en">
         <body className={quicksand.className}>{children}</body>
       </html>
