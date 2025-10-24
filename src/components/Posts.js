@@ -3,7 +3,7 @@ import PostCard from "./ui/PostCrad";
 
 const Posts = () => {
   return (
-    <div className="px-8 py-8 flex gap-5 flex-wrap">
+    <div className="px-8 pb-8 flex gap-5 flex-wrap">
       <PostCard
         userName="Siddharaj Gohil"
         userImage="/sid-profile.jpg"

@@ -23,7 +23,7 @@ const PostCard = ({
 
       {/* User Info + Post Details */}
       <div className="p-4 flex flex-col gap-3">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex md:items-center md:justify-between flex-col md:flex-row gap-2">
           <div className="flex items-center gap-2">
             <Image
               src={userImage}
@@ -32,10 +32,10 @@ const PostCard = ({
               height={500}
               className="rounded-full h-8 w-auto"
             />
-            <p className="font-semibold text-gray-900">{userName}</p>
+            <p className="font-semibold text-gray-900 text-sm">{userName}</p>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-500">
+            <span className="text-xs md:text-sm text-gray-500">
               {time} | {date}
             </span>
           </div>

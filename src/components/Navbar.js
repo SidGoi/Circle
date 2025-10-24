@@ -33,7 +33,7 @@ const Navbar = () => {
       {/* Right side buttons */}
       <div className="flex gap-3 items-center justify-center">
         {isSignedIn ? (
-          <>
+          <div className="flex gap-3 items-center justify-center">
             {/* Create Post Button */}
             <Dialog>
               <DialogTrigger>
@@ -82,8 +82,10 @@ const Navbar = () => {
             </Dialog>
 
             {/* User Button */}
-            <UserButton />
-          </>
+            <div className="scale-125 flex items-center">
+              <UserButton />
+            </div>
+          </div>
         ) : (
           <>
             <Link
