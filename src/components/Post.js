@@ -10,7 +10,7 @@ const Post = () => {
             src={"/temp.jpg"}
             height={200}
             width={200}
-            className="h-8 w-8 md:h-12 md:w-12 object-cover rounded-full"
+            className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-full"
           />
           <div className="flex flex-col">
             <h1 className="text-xl font-semibold text-[#222]">
@@ -46,7 +46,7 @@ const Post = () => {
         src={"/temp.jpg"}
         height={1000}
         width={1000}
-        className="w-full md:w-80 h-80 bg-primary rounded-2xl object-cover"
+        className="w-full md:w-80 h-80 bg-primary/40 rounded-2xl object-cover"
       />
       <p className="px-4 font-medium">
         lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
