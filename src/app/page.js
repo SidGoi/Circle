@@ -66,13 +66,13 @@ const page = () => {
       </header>
       <main>
         <SignedOut>
-          <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-16 lg:px-24 gap-5">
-            <div className="flex flex-col items-start justify-start gap-4 md:w-[50%]">
-              <h3 className="text-lg md:text-2xl font-semibold text-[#222] relative">
+          <div className="flex h-[80vh] md:h-auto flex-col-reverse md:flex-row items-center justify-center md:justify-between px-4 md:px-16 lg:px-24 gap-5">
+            <div className="flex flex-col items-center justify-center md:items-start md:justify-start gap-4 md:w-[50%]">
+              <h3 className="text-2xl md:text-2xl font-semibold text-[#222] relative">
                 Welcome to Circle!
                 <span className="absolute w-full h-1.5 md:h-2.5 bg-primary left-0 bottom-1 opacity-50 -rotate-1 rounded-lg -z-1" />
               </h3>
-              <h1 className="text-2xl md:text-5xl text-[#222] mb-3">
+              <h1 className="text-3xl text-center md:text-left md:text-5xl text-[#222] mb-3">
                 Share your moments, connect with friends,{" "}
                 <b>and build your story through images and words.</b>
               </h1>
@@ -95,7 +95,7 @@ const page = () => {
               src={"/landing.png"}
               height={1000}
               width={1000}
-              className="w-100 h-80 md:w-140 md:h-120 object-contain"
+              className="w-100 h-100 md:w-140 md:h-120 object-contain"
             />
           </div>
         </SignedOut>
