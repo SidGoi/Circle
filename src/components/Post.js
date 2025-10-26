@@ -3,7 +3,7 @@ import React from "react";
 
 const Post = () => {
   return (
-    <div className="w-80 flex flex-col gap-3 bg-pink-50 py-3 pt-4 rounded-2xl">
+    <div className="w-full md:w-80 flex flex-col gap-3 bg-pink-50 py-3 pt-4 rounded-2xl">
       <div className="flex items-center justify-between px-6">
         <div className="flex gap-2 items-center">
           <Image
@@ -46,7 +46,7 @@ const Post = () => {
         src={"/temp.jpg"}
         height={1000}
         width={1000}
-        className="w-80 h-80 bg-primary rounded-2xl object-cover"
+        className="w-full md:w-80 h-80 bg-primary rounded-2xl object-cover"
       />
       <p className="px-4 font-medium">
         lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
